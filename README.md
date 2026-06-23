@@ -1,5 +1,7 @@
 # 🤖 AI Resume Analyzer
 
+🔗 Live Demo: https://airesumeanalyser-d3s8bt3kzup6kx7jeqszsn.streamlit.app/
+
 An AI-powered Resume Analyzer built using Python, Streamlit, and Google Gemini AI that helps users evaluate resumes, identify missing skills, compare resumes with job descriptions, and receive AI-generated improvement suggestions.
 
 This project was created to make resume screening smarter, faster, and more interactive using Generative AI and NLP techniques.
