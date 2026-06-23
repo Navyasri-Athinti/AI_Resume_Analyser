@@ -6,13 +6,12 @@ import google.generativeai as genai
 from pdf2image import convert_from_path
 import pytesseract
 import pdfplumber
-
-# Load environment variables
 load_dotenv(".env.txt")
 
-# Configure Gemini API
-print("Current directory:", os.getcwd())
-api_key = os.getenv("GOOGLE_API_KEY")
+api_key = st.secrets.get("GOOGLE_API_KEY", os.getenv("GOOGLE_API_KEY"))
+
+genai.configure(api_key=api_key)
+
 
 if not api_key:
     st.error("Google API Key not found. Please add it to your .env file.")
